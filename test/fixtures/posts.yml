@@ -1,0 +1,11 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/Fixtures.html
+
+<% 1.upto(30) do |i| %>
+post_<%= i %>:
+  id: <%= i %>
+  user_id: <%= i %>
+  title: post_<%= i %>
+  content: What the hell is a gigowatt ?
+  comments_count: 1
+  votes_count: <%= i %>
+<% end %>

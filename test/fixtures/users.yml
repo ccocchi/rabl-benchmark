@@ -1,0 +1,11 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/Fixtures.html
+
+<% 1.upto(30) do |i| %>
+user_<%= i %>:
+  id: <%= i %>
+  firstname: Marty_<%= i %>
+  lastname: McFly_<%= i %>
+  age: 1
+  posts_count: 1
+  picture: http://foo.bar/marty.png
+<% end %>
