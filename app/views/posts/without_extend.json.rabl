@@ -1,6 +1,7 @@
 collection :@posts, :root => :posts
 # collection @posts, :root => :posts
 
-extends 'posts/base'
+attributes :id, :title, :content
+node(:votes) { |p| p.votes_count * 2 }
 
 attribute :comments_count

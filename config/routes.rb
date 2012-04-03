@@ -1,9 +1,17 @@
 RablBenchmark::Application.routes.draw do
-  resources :comments
+  resources :posts, :only => [:index] do
+    collection do
+      get :without_extend
+    end
+  end
 
-  resources :posts
-
-  resources :users
+  resources :users, :only => [:show] do
+    member do
+      get :with_extend
+      get :deep_nesting
+      get :with_partial
+    end
+  end
 
   # The priority is based upon order of creation:
   # first created -> highest priority.

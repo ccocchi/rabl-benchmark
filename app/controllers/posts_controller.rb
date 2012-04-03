@@ -5,11 +5,9 @@ class PostsController < ApplicationController
     @posts = Post.order('created_at ASC').includes(:comments)
     respond_with(@posts)
   end
-
-  # GET /posts/1
-  # GET /posts/1.json
-  def show
-    @post = Post.includes(:comments => :user).find(params[:id])
-    respond_with(@post)
+  
+  def without_extend
+    @posts = Post.order('created_at ASC').includes(:comments)
+    respond_with(@posts)
   end
 end

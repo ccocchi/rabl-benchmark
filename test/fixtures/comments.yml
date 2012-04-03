@@ -1,11 +1,13 @@
 # Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/Fixtures.html
 
-one:
-  user_id: 1
+comment_1:
+  user_id: 3
   post_id: 1
-  content: MyString
+  content: Woaw !
 
-two:
-  user_id: 1
-  post_id: 1
-  content: MyString
+<% 2.upto(4) do |i| %>
+comment_<%= i %>:
+  user_id: 3
+  post_id: <%= i %>
+  content: Nice post dude !
+<% end %>

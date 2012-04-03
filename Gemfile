@@ -7,7 +7,7 @@ gem 'rails', '3.2.2'
 
 gem 'sqlite3'
 
-#gem 'rabl'
+# gem 'rabl'
 gem 'rabl-fast-json', :path => '../rabl-fast-json'
 
 gem 'ruby-prof'

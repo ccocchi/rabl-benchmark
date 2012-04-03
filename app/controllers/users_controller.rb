@@ -1,15 +1,27 @@
 class UsersController < ApplicationController
-  # GET /users
-  # GET /users.json
-  def index
-    @users = User.all
-    respond_with(@users)
-  end
-
+  before_filter :load_user
+  
   # GET /users/1
   # GET /users/1.json
   def show
-    @user = User.find(params[:id])
     respond_with(@user)
+  end
+  
+  def with_extend
+    respond_with(@user)
+  end
+  
+  def deep_nesting
+    respond_with(@user)
+  end
+  
+  def with_partial
+    respond_with(@user)
+  end
+  
+  protected
+  
+  def load_user
+    @user = User.find(params[:id])
   end
 end

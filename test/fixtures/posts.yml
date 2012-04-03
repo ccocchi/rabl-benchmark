@@ -9,3 +9,11 @@ post_<%= i %>:
   comments_count: 1
   votes_count: <%= i %>
 <% end %>
+
+post_for_extend:
+  id: 31
+  user_id: 1
+  title: I want to break free
+  content: WTFWFMD
+  comments_count: 3
+  votes_count: 0

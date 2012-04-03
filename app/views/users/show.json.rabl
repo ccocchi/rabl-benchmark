@@ -1,4 +1,5 @@
 object :@user, :root => :user
+# object @user => :user
 
 attributes :id, :firstname, :lastname
 attribute :age => :springs
