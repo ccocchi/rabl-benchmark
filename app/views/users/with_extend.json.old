@@ -1,0 +1,5 @@
+object @user => :user
+
+extends 'users/base'
+
+attribute :age => :springs

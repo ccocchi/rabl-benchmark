@@ -4,19 +4,19 @@ class UsersController < ApplicationController
   # GET /users/1
   # GET /users/1.json
   def show
-    respond_with(@user)
+    respond_with_handler
   end
   
   def with_extend
-    respond_with(@user)
+    respond_with_handler
   end
   
   def deep_nesting
-    respond_with(@user)
+    respond_with_handler
   end
   
   def with_partial
-    respond_with(@user)
+    respond_with_handler
   end
   
   protected

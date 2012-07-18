@@ -1,0 +1,5 @@
+collection @posts => :posts
+
+extends 'posts/base'
+
+attribute :comments_count
