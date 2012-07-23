@@ -20,9 +20,11 @@ More tests cases are welcome
 
 ## Results
 
-`rabl-rails` gem is 5% faster when rendering single object, but can be **50% faster** when rendering collection with extends (which one of the most used case).
+`rabl-rails` gem is ~5% faster when rendering single object, but can be **50% faster** when rendering collection with extends (one of the most used case through applications).
 
-`rabl-rails` alse use **less memory** globally, around 10% less, with **50%** less memory used on collection with extend.
+`rabl-rails` alse use **less memory** globally, around 10%, with **50%** less memory used on collection with extend.
+
+See [BENCHMARK](http://github.com/ccocchi/rabl-benchmark/blob/master/BENCHMARK) for details.
 
 ## Helping out
 

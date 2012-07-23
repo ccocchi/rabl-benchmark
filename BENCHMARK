@@ -1,0 +1,24 @@
+These benchmarks were run on a 64-bit OS X machine
+
+Darwin Chrissou.local 11.4.0 Darwin Kernel Version 11.4.0: Mon Apr  9 19:32:15 PDT 2012; root:xnu-1699.26.8~1/RELEASE_X86_64 x86_64 i386
+ruby 1.9.3p125 (2012-02-16 revision 34643) [x86_64-darwin11.3.0]
+RUBY_VERSION=ruby-1.9.3-p125
+
+                                        time(ms)  memory(Bytes)  objects(#)
+collection_with_extends: rabl-rails           37            780      12,985
+collection_with_extends: rabl                 69           1700      24,575
+
+collection_witout_extends: rabl-rails         37            772      12,840
+collection_witout_extends: rabl               46            931      14,869
+
+object_with_extends: rabl-rails               15            518       8,763
+object_with_extends: rabl                     16            569       9,538
+
+object_without_extends: rabl-rails            14            507       8,583             
+object_without_extends: rabl                  16            532       8,994             
+
+object_with_partial: rabl-rails               18            618      10,306
+object_with_partial: rabl-rails               20            660      10,980
+
+deep_nesting: rabl-rails                      23            713      11,832
+deep_nesting: rabl                            37            979      14,937
