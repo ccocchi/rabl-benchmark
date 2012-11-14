@@ -9,8 +9,7 @@ gem 'sqlite3'
 
 gem 'yajl-ruby', :require => 'yajl'
 gem 'rabl'
-gem 'rabl-rails', :path => '../rabl-rails'
-
+gem 'rabl-rails'
 gem 'ruby-prof'
 
 # To use ActiveModel has_secure_password
