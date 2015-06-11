@@ -1,16 +1,17 @@
 source 'https://rubygems.org'
 
-gem 'rails', '3.2.2'
+gem 'rails', '~> 4.2.1'
 
 # Bundle edge Rails instead:
 # gem 'rails', :git => 'git://github.com/rails/rails.git'
 
 gem 'sqlite3'
+gem 'oj'
+gem 'oj_mimic_json'
 
-gem 'yajl-ruby', :require => 'yajl'
 gem 'rabl'
 gem 'rabl-rails'
-gem 'ruby-prof'
+gem 'active_model_serializers'
 
 # To use ActiveModel has_secure_password
 # gem 'bcrypt-ruby', '~> 3.0.0'
