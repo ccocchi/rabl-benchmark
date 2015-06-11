@@ -12,6 +12,7 @@ gem 'oj_mimic_json'
 gem 'rabl'
 gem 'rabl-rails'
 gem 'active_model_serializers'
+gem 'jbuilder'
 
 # To use ActiveModel has_secure_password
 # gem 'bcrypt-ruby', '~> 3.0.0'
