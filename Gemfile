@@ -1,15 +1,16 @@
 source 'https://rubygems.org'
 
-gem 'rails', '3.2.2'
+gem 'rails', '~> 5.1.0'
 
 # Bundle edge Rails instead:
 # gem 'rails', :git => 'git://github.com/rails/rails.git'
 
 gem 'sqlite3'
 
-gem 'yajl-ruby', :require => 'yajl'
+gem 'oj'
 gem 'rabl'
-gem 'rabl-rails'
+gem 'rabl-rails', git: 'git@github.com:ccocchi/rabl-rails.git', branch: '0.5.x'
+gem 'rails-perftest'
 gem 'ruby-prof'
 
 # To use ActiveModel has_secure_password

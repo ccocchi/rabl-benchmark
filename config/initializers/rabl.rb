@@ -4,7 +4,7 @@ if defined?(Rabl)
     # Commented as these are defaults
     # config.cache_all_output = true
     config.cache_sources = true
-    config.json_engine = :yajl # Any multi\_json engines
+    # config.json_engine = :yajl # Any multi\_json engines
     # config.msgpack_engine = nil # Defaults to ::MessagePack
     # config.bson_engine = nil # Defaults to ::BSON
     # config.plist_engine = nil # Defaults to ::Plist::Emit
